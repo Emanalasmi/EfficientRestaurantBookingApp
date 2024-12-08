@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image2_view"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/pic2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/image2_view"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/pic2_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/pic2_name"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/pic2_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dine Type"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/pic2_address"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/pic2_button"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Reserve Now"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/pic2_type"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
